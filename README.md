@@ -1,5 +1,5 @@
 # leetcode
-My LeetCode exercises. Fetching by neovim.
+My LeetCode journey. Fetching by neovim.
 
 ## Installation
 **neovim**
