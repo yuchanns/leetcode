@@ -4,7 +4,7 @@ My LeetCode journey. Fetching by neovim.
 ## Installation
 **neovim**
 ```bash
-# make sure your neovim version is greate equal than 0.8
+# make sure your neovim version is greater equal than 0.8
 # assume you use macOS
 brew install neovim
 # fetech my configuration
