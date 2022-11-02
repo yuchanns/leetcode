@@ -1,16 +1,10 @@
 func removeElement(nums []int, val int) int {
-	j := 0
-	for i := range nums {
-		i = i - j
+	index := len(nums) - 1
+	for i := len(nums) - 1; i >= 0; i-- {
 		if nums[i] == val {
-			nums = removeIndex(nums, i)
-			j++
+			nums[i], nums[index] = nums[index], nums[i]
+			index--
 		}
 	}
-
-	return len(nums)
-}
-
-func removeIndex(nums []int, index int) []int {
-	return append(nums[:index], nums[index+1:]...)
+	return index + 1
 }
