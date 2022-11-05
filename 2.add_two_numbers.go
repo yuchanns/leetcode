@@ -27,23 +27,15 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		}
 		if l1 != nil {
 			current.Val = (current.Val + l1.Val) % 10
-		}
-		if l2 != nil {
-			current.Val = (current.Val + l2.Val) % 10
-		}
-		if l1 != nil {
 			carry += l1.Val
-		}
-		if l2 != nil {
-			carry += l2.Val
-		}
-		carry /= 10
-		if l1 != nil {
 			l1 = l1.Next
 		}
 		if l2 != nil {
+			current.Val = (current.Val + l2.Val) % 10
+			carry += l2.Val
 			l2 = l2.Next
 		}
+		carry /= 10
 		if result == nil {
 			result = current
 		}
